@@ -113,4 +113,13 @@
     </h1>
     <button class="back-button" id="backButton">⬅ Back</button>
   </div>
+<div class="container" id="mainContainer">
+    <h2>Choose Course</h2>
+    <select id="courseDropdown" onchange="selectCourse(this.value)">
+      <option value="">-- Select a course --</option>
+      <option value="CSE">CSE</option>
+      <option value="ECE">ECE</option>
+    </select>
+    <div class="selected-course" id="selectedCourse"></div>
+  </div>
 
