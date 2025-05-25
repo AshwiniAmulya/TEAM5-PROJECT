@@ -242,4 +242,16 @@
 
           const tbody = document.createElement("tbody");
           plan[semester].forEach(topic => {
-            const tr = document.createElement("tr");      
+            const tr = document.createElement("tr");
+
+         const tdCheck = document.createElement("td");
+            const checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            checkbox.id = topic;
+            tdCheck.appendChild(checkbox);
+
+            const tdTopic = document.createElement("td");
+            const label = document.createElement("label");
+            label.htmlFor = topic;
+            label.innerText = topic;
+            tdTopic.appendChild(label);		  
