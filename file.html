@@ -224,3 +224,11 @@
       "Operating Systems": "<strong>Reference Notes:</strong> Understand process management, memory, and file systems. Refer to Galvin's OS book and Neso Academy.",
       "Machine Learning": "<strong>Reference Notes:</strong> Learn about regression, classification, SVM, KNN. Use Andrew Ng’s Coursera and Kaggle exercises."
 };
+ function selectCourse(course) {
+      if (coursePlans[course]) {
+        selectedCourseDiv.textContent = "";
+        mainContainer.style.display = "none";
+        studyPlanContainer.style.display = "block";
+        backButton.style.display = "inline";
+        container.innerHTML = "";
+        studyPlanTitle.textContent = coursePlans[course].title;
