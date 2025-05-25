@@ -266,4 +266,13 @@
 
             span.addEventListener("click", () => {
               ref.style.display = ref.style.display === "none" ? "block" : "none";
-	    });		  
+	    });
+		  tdDetail.appendChild(span);
+            tdDetail.appendChild(ref);
+
+            tr.appendChild(tdCheck);
+            tr.appendChild(tdTopic);
+            tr.appendChild(tdDetail);
+
+            tbody.appendChild(tr);
+	  });
