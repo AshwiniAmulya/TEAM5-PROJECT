@@ -283,4 +283,13 @@
         selectedCourseDiv.textContent = '';
         backButton.style.display = 'none';
       }
+ backButton.addEventListener('click', () => {
+      courseDropdown.value = "";
+      studyPlanContainer.style.display = "none";
+      mainContainer.style.display = "flex";
+      backButton.style.display = "none";
+    });
 
+</script>
+</body>
+</html>
