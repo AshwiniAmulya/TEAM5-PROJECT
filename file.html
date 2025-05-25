@@ -254,4 +254,16 @@
             const label = document.createElement("label");
             label.htmlFor = topic;
             label.innerText = topic;
-            tdTopic.appendChild(label);		  
+            tdTopic.appendChild(label);
+
+            const tdDetail = document.createElement("td");
+            const span = document.createElement("span");
+            span.className = "detail-toggle";
+            span.innerText = topicDetails[topic] || "Details coming soon.";
+            const ref = document.createElement("div");
+            ref.className = "reference-note";
+            ref.innerHTML = referenceNotes[topic] || "<em>No additional notes available.</em>";
+
+            span.addEventListener("click", () => {
+              ref.style.display = ref.style.display === "none" ? "block" : "none";
+	    });		  
